@@ -1,3 +1,4 @@
+import { Counter } from './Component';
 export const App = () => {
   return (
     <div
@@ -7,10 +8,12 @@ export const App = () => {
         justifyContent: 'center',
         alignItems: 'center',
         fontSize: 40,
-        color: '#010101'
+        color: '#010101',
       }}
     >
       React homework template
+      <button onClick={event => console.log(event)}>Click me!</button>
+      <Counter step={5} />
     </div>
   );
 };
